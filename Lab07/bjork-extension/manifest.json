@@ -1,0 +1,24 @@
+{
+  "name": "York to Bjork",
+  "version": "1.0",
+  "description": "York is better when it's Bjork",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["page.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["assets/bjork.png", "assets/shine.gif", "assets/bjork-cursor.gif" ],
+      "extension_ids": ["*"],
+      "matches": [ "*://*/*" ]
+    }
+  ],  
+	"icons": {
+    "16": "assets/bjork.png",
+    "48": "assets/bjork.png",
+    "128": "assets/bjork.png"
+  },
+  "manifest_version": 3
+}
